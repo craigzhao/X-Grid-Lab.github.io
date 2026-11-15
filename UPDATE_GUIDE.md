@@ -55,7 +55,7 @@ Edit `_data/people.yml`. Under `students:`, add an entry with the same indentati
     photo: ''
 ```
 
-To add a photo, upload it to `images/people/` and set `photo: /images/people/student-name.jpg`. Use a cropped portrait, ideally at least 600 pixels wide. Empty `photo` fields display initials. Move graduates into the `alumni` list when appropriate.
+To add a photo, upload it to `images/people/` and set `photo: /images/people/student-name.jpg`. A verified public HTTPS image URL also works. Use a portrait, ideally at least 600 pixels wide. The site crops the display without modifying the original. Empty `photo` fields display initials. New students appear automatically on both the homepage and People page. Move graduates into the `alumni` list when appropriate.
 
 ## Update research or courses
 

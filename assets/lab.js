@@ -51,4 +51,28 @@
       setTimeout(() => { button.textContent = 'Copy citation'; }, 2400);
     });
   });
+
+  // Reveal is an enhancement: content stays visible without JavaScript or motion.
+  const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const revealTargets = [...document.querySelectorAll('[data-reveal], .research-grid, .feature-grid, .team-preview-grid, .director-profile, .people-grid, .news-home')];
+  if (!motion.matches && 'IntersectionObserver' in window && revealTargets.length) {
+    const reveal = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          reveal.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.06, rootMargin: '0px 0px -20px 0px' });
+    revealTargets.forEach(target => {
+      target.classList.add('reveal-ready');
+      reveal.observe(target);
+    });
+    motion.addEventListener('change', event => {
+      if (event.matches) {
+        reveal.disconnect();
+        revealTargets.forEach(target => target.classList.remove('reveal-ready'));
+      }
+    });
+  }
 })();

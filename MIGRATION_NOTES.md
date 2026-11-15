@@ -28,7 +28,7 @@ Publication `date` values use January 1 for year-only source records. The public
 
 Content combines the public sources above with research-direction context supplied by the PI. The expanded research descriptions cover neural stability certificates, agentic AI, grid foundation models, renewable forecasting, and data-center flexibility as areas of investigation. Research proposals, collaborator lists from private planning, unpublished results, internal budgets, grant applications, and student research interests not stated on the source pages are not published.
 
-No fabricated headshots or lab photographs are used. Initials serve as intentional placeholders until local portraits are provided. Research illustrations are editable SVGs, explicitly conceptual rather than measured plots.
+No fabricated headshots or lab photographs are used. The PI portrait is the official UTA faculty image linked from the UTA Quantum Initiative and Electrical Engineering directory. Its public CDN URL is stored in `_data/people.yml`; initials remain for students whose verified portraits have not been supplied. Additional student names and portraits are awaiting PI input because the original members page could not be retrieved and its indexed roster contained only the two imported students. Research illustrations are editable SVGs, explicitly conceptual rather than measured plots.
 
 ## Hosting
 
