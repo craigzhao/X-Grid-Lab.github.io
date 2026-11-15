@@ -1,0 +1,24 @@
+director:
+  name: Tianqiao Zhao
+  title: Assistant Professor
+  role: Principal Investigator
+  initials: TZ
+  email: tianqiao.zhao@uta.edu
+  bio: Tianqiao Zhao leads the AIRE-Q Lab in the Department of Electrical Engineering at The University of Texas at Arlington. His research connects power system operation and control with artificial intelligence, optimization, and quantum computing, with a focus on reliability, resilience, and cyber-physical security.
+  faculty_url: https://www.uta.edu/academics/schools-colleges/engineering/academics/departments/electrical/faculty-directory
+  photo: '' # Optional local path, for example /images/people/tianqiao-zhao.jpg
+students:
+  - name: Luofei Liang
+    role: Ph.D. Student
+    joined: Spring 2026
+    initials: LL
+    email: lxl4205@mavs.uta.edu
+    photo: ''
+  - name: Vikrampruthvira Decharwar
+    role: Ph.D. Student
+    joined: Fall 2025
+    initials: VD
+    email: vikrampruthvira.decharwar@mavs.uta.edu
+    note: Co-supervised with Dr. Wei-Jen Lee
+    photo: ''
+alumni: []

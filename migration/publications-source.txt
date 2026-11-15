@@ -1,0 +1,66 @@
+Publications – AI & Quantum for Resilient Energy (https://aireqlab.uta.edu/publications/)
+【turn4search0】 [wordlim: 200] Crawled: 5 months ago; Selected Journal Publications: ... 2025 IEEE International Conference on Quantum Computing and Engineering (QCE), 199–204. https://doi.org/10.1109/qce65121.2025.10319 ... tianqiao.zhao@uta.edu
+
+# Publications
+
+Selected Journal Publications:
+
+  1. Huang, B., Zhao, T., Yue, M., Zheng, X., & Wang, J. (2026). Quantum Policy Learning for Energy Storage Arbitrage. IEEE Transactions on Smart Grid, 1–1. https://doi.org/10.1109/tsg.2026.3660187
+  2. Lin, D., Wang, J., Tseng, H., Zhao, T., Yue, M., & Yoo, S. (2025). A Two-Stage Quantum Reinforcement Learning Method for Multi-Objective Transmission Switching. 1–13. https://doi.org/10.1109/tpwrs.2025.3645024
+  3. Zhang, S., Yu, M., Zhao, T., Geng, Y., Liu, Z., Zhang, X., & Yu, L. (2025). Effects of probiotics on gut microbiota in poultry. 11(3), 754–768. https://doi.org/10.3934/microbiol.2025032
+  4. Lin, D., Wang, J., Tseng, H., Zhao, T., Yue, M., & Yoo, S. (2025). Quantum Reinforcement Learning for Volt-VAR Control in Power Distribution Systems. 1–1. https://doi.org/10.1109/oajpe.2025.3634993
+  5. Raghunathan, N., Wang, Z., Bragin, M. A., Luh, P. B., Yan, B., Zhao, T., & Yue, M. (2025). Reduced-Order Decomposition and Coordination Approach for Markov-Based Stochastic Unit Commitment With Distributed Wind Farms. IEEE Access, 13, 65403–65419. https://doi.org/10.1109/access.2025.3553410
+  6. Zhao, T., Zhu, F., Yue, M., Wang, J., Wang, S., & Hooshyar, H. (2025). An End-to-End Learning Framework for Real-Time Decomposition and Classification of Aggregate Measurements at Substations. IEEE Transactions on Industrial Informatics, 21(10), 8133–8143. https://doi.org/10.1109/tii.2025.3582386
+  7. Wu, T., Wang, J., & Zhao, T. (2025). Coordinated planning of integrated energy system with hydrogen hub. Applied Energy, 394, 126089. https://doi.org/10.1016/j.apenergy.2025.126089
+  8. Wu, T., Wang, J., Zhao, T., Zhou, A., Chowdhury, B., & Cox, R. (2025). Event-Based Hybrid Bi-Level Energy Management and Control Framework of Networked Microgrid. IEEE Transactions on Smart Grid, 16(2), 1351–1365. https://doi.org/10.1109/tsg.2024.3486575
+  9. Zhao, T., Yogarathnam, A., & Yue, M. (2025). A Large Language Model for Determining Partial Tripping of Distributed Energy Resources. IEEE Transactions on Smart Grid, 16(1), 437–440. https://doi.org/10.1109/tsg.2024.3453649
+  10. Huang, X., Zhao, T., Huang, B., Zhang, Z., & Yue, M. (2025). Advancing energy system optimization via data-centric task-oriented forecasting: An application in PV-battery operation. Applied Energy, 378, 124753. https://doi.org/10.1016/j.apenergy.2024.124753
+  11. Yu, Y., Jiang, X., Huang, D., Li, Y., Yue, M., & Zhao, T. (2024). PIDGeuN: Graph Neural Network-Enabled Transient Dynamics Prediction of Networked Microgrids Through Full-Field Measurement. IEEE Access, 1–1. https://doi.org/10.1109/access.2024.3384457
+  12. Zhao, T., Yue, M., Jensen, M., Endo, S., Marschilok, A. C., Nugent, B., Cerruti, B., & Spanos, C. (2024). Variational data augmentation for a learning-based granular predictive model of power outages. Electric Power Systems Research, 232, 110299. https://doi.org/10.1016/j.epsr.2024.110299
+  13. Huang, B., Zhao, T., Yue, M., & Wang, J. (2024). Bi-Level Adaptive Storage Expansion Strategy for Microgrids Using Deep Reinforcement Learning. IEEE Transactions on Smart Grid, 15(2), 1362–1375. https://doi.org/10.1109/tsg.2023.3312225
+  14. Zhao, T., Wang, J., & Yue, M. (2023). A Barrier-Certificated Reinforcement Learning Approach for Enhancing Power System Transient Stability. 38(6), 5356–5366. https://doi.org/10.1109/tpwrs.2022.3233770
+  15. Zhao, T., Yue, M., & Wang, J. (2023). Robust Power System Stability Assessment Against Adversarial Machine Learning-Based Cyberattacks via Online Purification. 38(6), 5613–5622. https://doi.org/10.1109/tpwrs.2022.3233735
+  16. Zhao, T., Yue, M., & Wang, J. (2023). Deep-Learning-Based Koopman Modeling for Online Control Synthesis of Nonlinear Power System Transient Dynamics. IEEE Transactions on Industrial Informatics, 19(10), 10444–10453. https://doi.org/10.1109/tii.2023.3240939
+  17. Zhang, C., Wang, X., Zhao, T., & Gao, D. (2023). Editorial: Innovative methods and techniques in new electric power systems. 11. https://doi.org/10.3389/fenrg.2023.1134563
+  18. Zhao, T., Raghunathan, N., Yogarathnam, A., Yue, M., & Luh, P. B. (2023). A scalable planning framework of energy storage systems under frequency dynamics constraints. 145, 108693. https://doi.org/10.1016/j.ijepes.2022.108693
+  19. Zhao, T., Yue, M., & Wang, J. (2022). Structure-Informed Graph Learning of Networked Dependencies for Online Prediction of Power System Transient Dynamics. 37(6), 4885–4895. https://doi.org/10.1109/tpwrs.2022.3153328
+  20. Wang, X., Zhao, T., & Parisio, A. (2022). Frequency regulation and congestion management by Virtual Storage Plants. 29, 100586. https://doi.org/10.1016/j.segan.2021.100586
+  21. Zhao, T., & Wang, J. (2022). Learning Sequential Distribution System Restoration via Graph-Reinforcement Learning. 37(2), 1601–1611. https://doi.org/10.1109/tpwrs.2021.3102870
+  22. Zhao, T., Wang, J., Lu, X., & Du, Y. (2022). Neural Lyapunov Control for Power System Transient Stability: A Deep Learning-Based Approach. 37(2), 955–966. https://doi.org/10.1109/tpwrs.2021.3102857
+  23. Zhao, T., Parisio, A., & Milanović, J. V. (2022). Distributed control of battery energy storage systems in distribution networks for voltage regulation at transmission–distribution network interconnection points. 119, 104988. https://doi.org/10.1016/j.conengprac.2021.104988
+  24. Dong, Y., Dong, Z., Zhao, T., Li, Z., & Ding, Z. (2021). Short term load forecasting with markovian switching distributed deep belief networks. 130, 106942. https://doi.org/10.1016/j.ijepes.2021.106942
+  25. Dong, Y., Dong, Z., Zhao, T., & Ding, Z. (2021). A Strategic Day-ahead bidding strategy and operation for battery energy storage system by reinforcement learning. Electric Power Systems Research, 196, 107229. https://doi.org/10.1016/j.epsr.2021.107229
+  26. Zhao, T., Wang, J., & Lu, X. (2021). An MPC-Aided Resilient Operation of Multi-Microgrids With Dynamic Boundaries. IEEE Transactions on Smart Grid, 12(3), 2125–2135. https://doi.org/10.1109/tsg.2020.3042111
+  27. Zhao, T., Parisio, A., & Milanović, J. V. (2021). Location-dependent distributed control of battery energy storage systems for fast frequency response. 125, 106493. https://doi.org/10.1016/j.ijepes.2020.106493
+  28. Zhao, T., Chen, B., Zhao, S., Wang, J., & Lu, X. (2020). A Flexible Operation of Distributed Generation in Distribution Networks With Dynamic Boundaries. 35(5), 4127–4130. https://doi.org/10.1109/tpwrs.2020.3004765
+  29. Zhao, T., Parisio, A., & Milanovic, J. V. (2020). Distributed Control of Battery Energy Storage Systems for Improved Frequency Regulation. 35(5), 3729–3738. https://doi.org/10.1109/tpwrs.2020.2974026
+  30. Dong, Y., Zhao, T., & Ding, Z. (2019). Demand‐side management using a distributed initialisation‐free optimisation in a smart grid. 13(9), 1533–1543. https://doi.org/10.1049/iet-rpg.2018.5858
+  31. Zhao, T., Li, Z., & Ding, Z. (2019). Consensus-Based Distributed Optimal Energy Management With Less Communication in a Microgrid. IEEE Transactions on Industrial Informatics, 15(6), 3356–3367. https://doi.org/10.1109/tii.2018.2871562
+  32. Zhao, T., & Ding, Z. (2018). Distributed Finite-Time Optimal Resource Management for Microgrids Based on Multi-Agent Framework. 65(8), 6571–6580. https://doi.org/10.1109/tie.2017.2721923
+  33. Zhao, T., & Ding, Z. (2018). Cooperative Optimal Control of Battery Energy Storage System Under Wind Uncertainties in a Microgrid. 33(2), 2292–2300. https://doi.org/10.1109/tpwrs.2017.2741672
+  34. Zhao, T., & Ding, Z. (2018). Distributed Agent Consensus-Based Optimal Resource Management for Microgrids. IEEE Transactions on Sustainable Energy, 9(1), 443–452. https://doi.org/10.1109/tste.2017.2740833
+  35. Zhao, T., & Ding, Z. (2017). Distributed Initialization-Free Cost-Optimal Charging Control of Plug-In Electric Vehicles for Demand Management. IEEE Transactions on Industrial Informatics, 13(6), 2791–2801. https://doi.org/10.1109/tii.2017.2685422
+
+### Conference Proceeding
+
+  1. Jang, S., Zhao, T., Yogarathnam, A., Yue, M., Ding, F., & Zhao, J. (2025). Correlation Reconstruction-based Anomaly Detection in Transient Responses of Distributed Energy Resources. 2025 IEEE International Conference on Communications, Control, and Computing Technologies for Smart Grids (SmartGridComm), 1–7. https://doi.org/10.1109/smartgridcomm65349.2025.11204620
+  2. Gu, Z., Zhao, Y., Yue, M., Zhao, T., & Li, J. (2025). Integrating Physics-Informed Neural Networks and Power Flow for Scalable Online Transient Analysis. 2025 IEEE International Conference on Communications, Control, and Computing Technologies for Smart Grids (SmartGridComm), 1–6. https://doi.org/10.1109/smartgridcomm65349.2025.11204635
+  3. Lin, D., Wang, J., Tseng, H., Yoo, S., Zhao, T., & Yue, M. (2025). A Sample-Efficient Quantum-Classical Reinforcement Learning Framework for Transmission Switching. 2025 IEEE International Conference on Quantum Computing and Engineering (QCE), 199–204. https://doi.org/10.1109/qce65121.2025.10319
+  4. Rajendran, S., Yogarathnam, A., Zhao, T., Endo, S., Aravinthan, V., & Yue, M. (2025). Improving Grid Resilience and Reliability Through Dynamic Line Rating During Ice Precipitating Conditions. 2025 IEEE PES Grid Edge Technologies Conference &amp; Exposition (Grid Edge), 1–5. https://doi.org/10.1109/gridedge61154.2025.10887467
+  5. Rajendran, S., Yogarathnam, A., Zhao, T., Endo, S., Aravinthan, V., Tamimi, A., Yokley, C. R., & Yue, M. (2024). Diversifying Transmission Planning of Wind-Heavy Systems by Incorporating Dynamic Line Rating. 2024 56th North American Power Symposium (NAPS), 1–6. https://doi.org/10.1109/naps61145.2024.10741620
+  6. Zhao, T., Satoshi, E., Yue, M., Jensen, M., Marschilok, A., Nugent, B., Cerruti, B., & Spanos, C. (2023). On Learning-Based Model for Dynamic Granular Prediction of Power Outages Under Extreme Events. 2023 IEEE PES Innovative Smart Grid Technologies Latin America (ISGT-LA), 445–449. https://doi.org/10.1109/isgt-la56058.2023.10328277
+  7. Zhao, T., Zhang, Y., & Yue, M. (2022). Scalable Deep Reinforcement Learning-based Volt-VAR Optimization in Distribution Systems: a Mean-field Approach. 2022 IEEE Power & Energy Society General Meeting (PESGM), 1–5. https://doi.org/10.1109/pesgm48719.2022.9916943
+  8. Zhang, Y., Chen, Y., Wang, J., Meng, Y., & Zhao, T. (2022). Decentralized Coordinated State Estimation in Integrated Transmission and Distribution Systems. 2022 IEEE Power & Energy Society Innovative Smart Grid Technologies Conference (ISGT), 1–5. https://doi.org/10.1109/isgt50606.2022.9817540
+  9. Zhao, T., & Ding, Z. (2017). Optimal energy management of microgrid via distributed primal-dual dynamics for fast frequency recovery. 2017 IEEE Power & Energy Society General Meeting, 1–5. https://doi.org/10.1109/pesgm.2017.8274384
+  10. Zhao, T., Zuo, Z., & Ding, Z. (2016). Cooperative control of distributed battery energy storage systems in Microgrids. 2016 35th Chinese Control Conference (CCC), 10019–10024. https://doi.org/10.1109/chicc.2016.7554940
+
+## Contact
+
+Tianqiao Zhao
+Nedderman Hall, 634,
+416 Yates St,
+Arlington, TX 76019
+
+tianqiao.zhao@uta.edu
+
+(817) 272-3815

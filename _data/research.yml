@@ -1,0 +1,32 @@
+- id: physics-aware-ai
+  number: '01'
+  title: Physics-aware AI
+  subtitle: Learning the dynamics. Respecting the physics.
+  short: Fast, reliable models for grid dynamics, stability assessment, and control.
+  description: We integrate power-system structure with machine learning to predict transient dynamics and support stability assessment across changing operating conditions. Our work connects graph learning, Koopman models, and neural Lyapunov control with the physical constraints of the grid.
+  topics: [Grid dynamics, Neural Lyapunov control, Graph learning, Koopman models]
+  publication_ids: [neural-lyapunov, koopman-control, structure-informed-graph]
+- id: trustworthy-ai
+  number: '02'
+  title: Trustworthy & secure AI
+  subtitle: Dependable decisions under imperfect information.
+  short: Robust learning, cyber-physical security, and intelligent decision support.
+  description: We study how learning-based monitoring and control behave when measurements are noisy, missing, or compromised. Our methods address adversarial robustness, anomaly detection, resilient decision support, and the use of language models for power-system applications.
+  topics: [Adversarial robustness, Cyber-physical security, LLMs for energy, Resilient control]
+  publication_ids: [llm-der-tripping, adversarial-stability]
+- id: quantum-energy
+  number: '03'
+  title: Quantum for energy
+  subtitle: New computational tools for hard grid problems.
+  short: Hybrid quantum-classical optimization and reinforcement learning for energy systems.
+  description: We explore how quantum computing and hybrid quantum-classical learning can support energy optimization and control. Applications include energy storage arbitrage, transmission switching, and Volt-VAR control, with an emphasis on practical algorithms and reproducible evaluation.
+  topics: [Quantum reinforcement learning, Storage arbitrage, Transmission switching, Volt-VAR control]
+  publication_ids: [quantum-storage, quantum-switching, quantum-volt-var]
+- id: resilient-systems
+  number: '04'
+  title: Resilient energy systems
+  subtitle: Ready for uncertainty. Prepared for extremes.
+  short: Renewable forecasting, storage coordination, and resilience to extreme weather.
+  description: We connect forecasting and uncertainty modeling to grid planning and operation. Our work includes granular outage prediction, data augmentation for rare events, storage planning and control, and robust operation of renewable-rich power systems.
+  topics: [Extreme-event resilience, Renewable uncertainty, Storage planning, Microgrid operation]
+  publication_ids: [outage-augmentation, task-oriented-forecasting, storage-planning]

@@ -1,0 +1,7 @@
+---
+title: News
+eyebrow: FROM THE LAB
+permalink: /news/
+description: Research updates and announcements from the AIRE-Q Lab.
+---
+<div class="news-list">{% assign posts = site.news | sort: 'date' | reverse %}{% for post in posts %}<article class="news-row"><div><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%B %d, %Y' }}</time><span class="eyebrow">{{ post.category }}</span></div><div><h2><a href="{{ post.url | relative_url }}">{{ post.title }} <span aria-hidden="true">↗</span></a></h2><p>{{ post.description }}</p><a class="text-link" href="{{ post.url | relative_url }}">Read update ↗</a></div></article>{% endfor %}</div>

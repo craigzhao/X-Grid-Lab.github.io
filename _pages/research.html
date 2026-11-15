@@ -1,0 +1,9 @@
+---
+title: Research
+eyebrow: FROM PHYSICS TO DECISIONS
+permalink: /research/
+description: Learning, optimization, and control for reliable power systems, with physics-aware AI and emerging quantum technologies.
+---
+<div class="research-intro"><p>We ask how intelligent methods can become dependable engineering tools. Across our work, the aim is the same: decisions that respect the physics, account for uncertainty, and improve the resilience of energy systems.</p><nav class="topic-navigation" aria-label="Research areas">{% for area in site.data.research %}<a href="#{{ area.id }}">{{ area.number }} / {{ area.title }} ↓</a>{% endfor %}</nav></div>
+{% for area in site.data.research %}<section class="research-detail" id="{{ area.id }}"><div class="research-index">{{ area.number }}</div><div><p class="eyebrow">{{ area.subtitle }}</p><h2>{{ area.title }}</h2><p>{{ area.description }}</p><div class="tags">{% for topic in area.topics %}<span>{{ topic }}</span>{% endfor %}</div><h3 class="small-heading">Related publications</h3><ul class="related-list">{% for pubid in area.publication_ids %}{% for paper in site.publications %}{% if paper.pub_id == pubid %}<li><a href="{{ paper.url | relative_url }}">{{ paper.title }} <span aria-hidden="true">↗</span></a><span>{{ paper.year }}</span></li>{% endif %}{% endfor %}{% endfor %}</ul></div></section>{% endfor %}
+<aside class="project-callout"><p class="eyebrow">COLLABORATIVE RESEARCH</p><h2>GridFM & Genesis Mission Phase II</h2><p>UTA is contributing agentic AI workflows and application development to a Brookhaven National Laboratory-led effort on next-generation grid foundation models. The collaboration connects AI models with utility applications and grid validation.</p><a class="text-link" href="{{ '/news/2026-09-28-genesis-gridfm/' | relative_url }}">Explore the project update ↗</a></aside>
