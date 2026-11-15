@@ -33,6 +33,7 @@ You can edit files using GitHub's pencil button and commit through the website. 
 | Lab description and contact | `_data/lab.yml` |
 | PI, students, alumni, photographs | `_data/people.yml` |
 | Research areas | `_data/research.yml` |
+| Collaborative research programs | `_data/programs.yml` |
 | Publications | One Markdown file per paper in `_publications/` |
 | News | One Markdown file per update in `_news/` |
 | Courses | One Markdown file per course in `_teaching/` |

@@ -4,7 +4,7 @@ director:
   role: Principal Investigator
   initials: TZ
   email: tianqiao.zhao@uta.edu
-  bio: Tianqiao Zhao leads the AIRE-Q Lab in the Department of Electrical Engineering at The University of Texas at Arlington. His research connects power system operation and control with artificial intelligence, optimization, and quantum computing, with a focus on reliability, resilience, and cyber-physical security.
+  bio: Tianqiao Zhao leads the AIRE-Q Lab in the Department of Electrical Engineering at The University of Texas at Arlington. His research connects power-system operation and control with artificial intelligence, optimization, and quantum computing. Current interests include stability and learning-based control, trustworthy and agentic AI, renewable forecasting, and the coordination of storage and flexible loads for reliable, resilient energy systems.
   faculty_url: https://www.uta.edu/academics/schools-colleges/engineering/academics/departments/electrical/faculty-directory
   photo: '' # Optional local path, for example /images/people/tianqiao-zhao.jpg
 students:

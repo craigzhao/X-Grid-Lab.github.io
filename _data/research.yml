@@ -2,17 +2,17 @@
   number: '01'
   title: Physics-aware AI
   subtitle: Learning the dynamics. Respecting the physics.
-  short: Fast, reliable models for grid dynamics, stability assessment, and control.
-  description: We integrate power-system structure with machine learning to predict transient dynamics and support stability assessment across changing operating conditions. Our work connects graph learning, Koopman models, and neural Lyapunov control with the physical constraints of the grid.
-  topics: [Grid dynamics, Neural Lyapunov control, Graph learning, Koopman models]
+  short: Learning grid dynamics and seeking verifiable stability guarantees for control.
+  description: We combine power-system structure with graph learning, physics-informed models, and Koopman representations to study transient dynamics across changing operating conditions. Our research on neural Lyapunov functions, regions of attraction, and constraint-aware reinforcement learning seeks to connect fast predictions with explicit stability and operating requirements.
+  topics: [Grid dynamics, Neural Lyapunov functions, Regions of attraction, Constraint-aware reinforcement learning, Koopman models]
   publication_ids: [neural-lyapunov, koopman-control, structure-informed-graph]
 - id: trustworthy-ai
   number: '02'
   title: Trustworthy & secure AI
   subtitle: Dependable decisions under imperfect information.
-  short: Robust learning, cyber-physical security, and intelligent decision support.
-  description: We study how learning-based monitoring and control behave when measurements are noisy, missing, or compromised. Our methods address adversarial robustness, anomaly detection, resilient decision support, and the use of language models for power-system applications.
-  topics: [Adversarial robustness, Cyber-physical security, LLMs for energy, Resilient control]
+  short: Robust learning and evidence-based agentic AI for engineering decisions.
+  description: We study monitoring and decision support when measurements are noisy, missing, or compromised. Alongside adversarial robustness and anomaly detection, we investigate agentic AI that coordinates models and numerical tools, records supporting evidence, and checks candidate decisions against engineering constraints. In grid foundation model applications, our focus is application orchestration and validation for practical planning and operating workflows.
+  topics: [Cyber-physical security, Adversarial robustness, Agentic AI, Grid foundation models, Evidence and validation]
   publication_ids: [llm-der-tripping, adversarial-stability]
 - id: quantum-energy
   number: '03'
@@ -26,7 +26,7 @@
   number: '04'
   title: Resilient energy systems
   subtitle: Ready for uncertainty. Prepared for extremes.
-  short: Renewable forecasting, storage coordination, and resilience to extreme weather.
-  description: We connect forecasting and uncertainty modeling to grid planning and operation. Our work includes granular outage prediction, data augmentation for rare events, storage planning and control, and robust operation of renewable-rich power systems.
-  topics: [Extreme-event resilience, Renewable uncertainty, Storage planning, Microgrid operation]
+  short: Renewable forecasting, coordinated storage, and flexible loads for a changing grid.
+  description: We connect wind and renewable forecasting, uncertainty quantification, and extreme-weather risk with grid planning and operation. Our work spans outage prediction, rare-event data augmentation, storage coordination, and reliability-aware operation of renewable-rich systems. We also study data-center flexibility and voltage ride-through, coordinating electrical and computing demands with grid operating requirements.
+  topics: [Wind forecasting, Uncertainty quantification, Extreme-event resilience, Storage coordination, Data-center flexibility, Voltage ride-through]
   publication_ids: [outage-augmentation, task-oriented-forecasting, storage-planning]

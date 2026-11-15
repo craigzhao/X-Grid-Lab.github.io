@@ -9,6 +9,7 @@
     nav.addEventListener('click', e => { if (e.target.closest('a')) closeMenu(); });
     document.addEventListener('click', e => { if (!e.target.closest('.header-inner')) closeMenu(); });
     window.matchMedia('(min-width: 961px)').addEventListener('change', e => { if (e.matches) closeMenu(); });
+    document.documentElement.classList.add('js-enabled');
   }
   const tools = document.querySelector('[data-publication-tools]');
   if (tools) {

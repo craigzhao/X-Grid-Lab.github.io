@@ -59,7 +59,7 @@ To add a photo, upload it to `images/people/` and set `photo: /images/people/stu
 
 ## Update research or courses
 
-Edit `_data/research.yml` to revise the four research directions, topics, and related paper IDs. To add a course, copy an existing file in `_teaching/`, edit the front matter and body, and choose its `order` value. Course terms are explicit so old offerings are not presented as current enrollment information.
+Edit `_data/research.yml` to revise the four research directions, topics, and related paper IDs. Edit `_data/programs.yml` for collaborative research programs and their public source links. To add a course, copy an existing file in `_teaching/`, edit the front matter and body, and choose its `order` value. Course terms are explicit so old offerings are not presented as current enrollment information.
 
 ## Check an update
 

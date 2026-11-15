@@ -11,6 +11,7 @@ import html
 import re
 import shutil
 from urllib.parse import urlsplit
+from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 import yaml
 from jinja2 import Environment, DictLoader
 
@@ -70,12 +71,16 @@ def main():
  parser.add_argument('--output',default='dist')
  args=parser.parse_args()
  dest=ROOT/args.output
- if dest.exists() and not dest.resolve().is_relative_to(ROOT.resolve()):
-  raise ValueError('Output must be inside the project')
+ if dest.resolve()==ROOT.resolve() or not dest.resolve().is_relative_to(ROOT.resolve()):
+  raise ValueError('Output must be a subdirectory inside the project')
  dest.mkdir(exist_ok=True,parents=True)
  site=yaml.safe_load((ROOT/'_config.yml').read_text(encoding='utf-8'))
  site['baseurl']=args.baseurl.rstrip('/')
- site['time']=dt.datetime(2026,11,15)
+ try:
+  timezone=ZoneInfo(site.get('timezone','UTC'))
+ except ZoneInfoNotFoundError:
+  timezone=dt.timezone.utc
+ site['time']=dt.datetime.now(timezone)
  site['data']={p.stem:yaml.safe_load(p.read_text(encoding='utf-8')) for p in (ROOT/'_data').glob('*.yml')}
  pages=[]
  for folder in ['_pages','_publications','_teaching','_news']:
@@ -84,6 +89,16 @@ def main():
    if path.suffix not in ['.md','.html']:
     continue
    meta,body=frontmatter(path)
+   if not site.get('future',False) and meta.get('date'):
+    date=meta['date']
+    if isinstance(date,str):
+     date=dt.datetime.fromisoformat(date.replace('Z','+00:00'))
+    if not isinstance(date,dt.datetime):
+     date=dt.datetime.combine(date,dt.time.min)
+    if date.tzinfo is None:
+     date=date.replace(tzinfo=timezone)
+    if date > site['time']:
+     continue
    kind=folder.lstrip('_')
    defaults={'pages':'lab-page','publications':'lab-publication','teaching':'lab-course','news':'lab-news'}
    meta.setdefault('layout',defaults[kind])
