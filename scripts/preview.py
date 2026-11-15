@@ -113,8 +113,8 @@ def main():
  layouts={p.stem:frontmatter(p) for p in (ROOT/'_layouts').glob('lab*.html')}
  env=Environment(loader=DictLoader(templates),autoescape=False)
  env.filters.update({
-  'relative_url':lambda s:site['baseurl']+'/'+str(s or '').lstrip('/'),
-  'absolute_url':lambda s:site['url']+site['baseurl']+'/'+str(s or '').lstrip('/'),
+  'relative_url':lambda s:str(s) if urlsplit(str(s or '')).scheme or str(s or '').startswith('//') else site['baseurl']+'/'+str(s or '').lstrip('/'),
+  'absolute_url':lambda s:str(s) if urlsplit(str(s or '')).scheme or str(s or '').startswith('//') else site['url']+site['baseurl']+'/'+str(s or '').lstrip('/'),
   'escape':lambda s:html.escape(str(s or ''),quote=True),
   'default':lambda x,d: x if x else d,
   'where':lambda xs,k,v:[x for x in xs if x.get(k)==v],
