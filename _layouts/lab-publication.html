@@ -1,0 +1,4 @@
+---
+layout: lab
+---
+<article class="shell article-page"><a class="back-link" href="{{ '/publications/' | relative_url }}">← All publications</a><p class="eyebrow">{{ page.category }} · {{ page.year }}</p><h1>{{ page.title }}</h1><p class="article-authors">{{ page.authors }}</p><p class="venue">{{ page.venue }}{% if page.volume %}, {{ page.volume }}{% endif %}{% if page.pages %}, {{ page.pages }}{% endif %}</p><div class="article-actions"><a class="button" href="https://doi.org/{{ page.doi }}">View publication <span aria-hidden="true">↗</span></a>{% if page.paperurl %}<a class="button button-quiet" href="{{ page.paperurl | relative_url }}">Read PDF</a>{% endif %}{% if page.codeurl %}<a class="text-link" href="{{ page.codeurl }}">Code ↗</a>{% endif %}</div>{{ content }}<h2>Citation</h2><pre class="citation-text">{{ page.citation | escape }}</pre><button class="copy-button" data-copy-previous>Copy citation</button></article>

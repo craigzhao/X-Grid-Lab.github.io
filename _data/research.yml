@@ -1,0 +1,32 @@
+- id: physics-aware-ai
+  number: '01'
+  title: Physics-aware AI
+  subtitle: Learning the dynamics. Respecting the physics.
+  short: Learning grid dynamics and seeking verifiable stability guarantees for control.
+  description: We combine power-system structure with graph learning, physics-informed models, and Koopman representations to study transient dynamics across changing operating conditions. Our research on neural Lyapunov functions, regions of attraction, and constraint-aware reinforcement learning seeks to connect fast predictions with explicit stability and operating requirements.
+  topics: [Grid dynamics, Neural Lyapunov functions, Regions of attraction, Constraint-aware reinforcement learning, Koopman models]
+  publication_ids: [neural-lyapunov, koopman-control, structure-informed-graph]
+- id: trustworthy-ai
+  number: '02'
+  title: Trustworthy & secure AI
+  subtitle: Dependable decisions under imperfect information.
+  short: Robust learning and evidence-based agentic AI for engineering decisions.
+  description: We study monitoring and decision support when measurements are noisy, missing, or compromised. Alongside adversarial robustness and anomaly detection, we investigate agentic AI that coordinates models and numerical tools, records supporting evidence, and checks candidate decisions against engineering constraints. In grid foundation model applications, our focus is application orchestration and validation for practical planning and operating workflows.
+  topics: [Cyber-physical security, Adversarial robustness, Agentic AI, Grid foundation models, Evidence and validation]
+  publication_ids: [llm-der-tripping, adversarial-stability]
+- id: quantum-energy
+  number: '03'
+  title: Quantum for energy
+  subtitle: New computational tools for hard grid problems.
+  short: Hybrid quantum-classical optimization and reinforcement learning for energy systems.
+  description: We explore how quantum computing and hybrid quantum-classical learning can support energy optimization and control. Applications include energy storage arbitrage, transmission switching, and Volt-VAR control, with an emphasis on practical algorithms and reproducible evaluation.
+  topics: [Quantum reinforcement learning, Storage arbitrage, Transmission switching, Volt-VAR control]
+  publication_ids: [quantum-storage, quantum-switching, quantum-volt-var]
+- id: resilient-systems
+  number: '04'
+  title: Resilient energy systems
+  subtitle: Ready for uncertainty. Prepared for extremes.
+  short: Renewable forecasting, coordinated storage, and flexible loads for a changing grid.
+  description: We connect wind and renewable forecasting, uncertainty quantification, and extreme-weather risk with grid planning and operation. Our work spans outage prediction, rare-event data augmentation, storage coordination, and reliability-aware operation of renewable-rich systems. We also study data-center flexibility and voltage ride-through, coordinating electrical and computing demands with grid operating requirements.
+  topics: [Wind forecasting, Uncertainty quantification, Extreme-event resilience, Storage coordination, Data-center flexibility, Voltage ride-through]
+  publication_ids: [outage-augmentation, task-oriented-forecasting, storage-planning]

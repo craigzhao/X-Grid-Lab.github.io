@@ -1,0 +1,75 @@
+# Updating the AIRE-Q website
+
+You can make routine updates entirely on GitHub. Open the appropriate file, click the pencil icon, edit, and choose **Commit changes**. A change on `master` automatically rebuilds the website once GitHub Pages is enabled. For a larger change, use a branch and pull request so you can review the build before merging.
+
+## Add a news announcement
+
+Open `_news/`, choose **Add file → Create new file**, and use a filename such as `2026-12-01-new-paper.md`. Paste:
+
+```yaml
+---
+title: "A short, factual announcement title"
+date: 2026-12-01
+category: Publication
+description: "One sentence explaining the update."
+---
+```
+
+Below the second `---`, write the announcement using ordinary text or Markdown. Add a source link if appropriate. Commit the file. News automatically appears newest first, and the latest three entries appear on the homepage. The example above is only a template; it is not a published announcement.
+
+## Add a publication
+
+Create `_publications/2026-short-paper-name.md`:
+
+```yaml
+---
+title: "Exact paper title"
+pub_id: short-paper-name
+date: 2026-01-01
+year: 2026
+category: Journal
+authors: "Author, A., Zhao, T., & Author, B."
+venue: "Exact journal name"
+doi: "10.xxxx/replace-with-real-doi"
+citation: "Full citation with authors, year, title, venue, and DOI."
+tags: [Power systems, Trustworthy AI]
+featured: false
+---
+```
+
+Use `Conference` for a conference paper. Add `volume` and `pages` if known. Only include `paperurl` or `codeurl` when you have a real URL. Upload a shareable manuscript to `files/` and use `paperurl: /files/my-paper.pdf`. Respect publisher rights when uploading manuscripts.
+
+Set `featured: true` to make a paper eligible for the homepage; the three newest featured papers are shown. The `pub_id` must be unique and can also connect a paper to a research area in `_data/research.yml`. When only the year is known, `date: YEAR-01-01` is a sorting key, not a claim about the exact publication date.
+
+## Add a member
+
+Edit `_data/people.yml`. Under `students:`, add an entry with the same indentation as the others:
+
+```yaml
+  - name: "Student Name"
+    role: Ph.D. Student
+    joined: Fall 2027
+    initials: SN
+    email: student@mavs.uta.edu
+    note: "Optional co-supervision or research note"
+    photo: ''
+```
+
+To add a photo, upload it to `images/people/` and set `photo: /images/people/student-name.jpg`. Use a cropped portrait, ideally at least 600 pixels wide. Empty `photo` fields display initials. Move graduates into the `alumni` list when appropriate.
+
+## Update research or courses
+
+Edit `_data/research.yml` to revise the four research directions, topics, and related paper IDs. Edit `_data/programs.yml` for collaborative research programs and their public source links. To add a course, copy an existing file in `_teaching/`, edit the front matter and body, and choose its `order` value. Course terms are explicit so old offerings are not presented as current enrollment information.
+
+## Check an update
+
+1. Open **Actions → Build and publish AIRE-Q Lab**.
+2. Check that the latest build has a green check. A red build means the update was not successfully published.
+3. Open the website and refresh. For a pull request, the `aireq-lab-site` build artifact is available from the workflow run.
+4. GitHub's file history and **Revert** allow you to undo changes.
+
+## Ask ChatGPT to update it
+
+For example: “Update the AIRE-Q website in `craigzhao/X-Grid-Lab.github.io`: add this accepted paper and feature it on the homepage,” followed by the full citation, DOI, and any permitted manuscript/code links. Or: “Add [name] as a Ph.D. student who joined in Fall 2027,” with their public profile details.
+
+The site does not discover announcements by itself. Updates are made when you edit the content or explicitly request an update.

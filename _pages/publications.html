@@ -1,36 +1,7 @@
 ---
-layout: archive
-title: "Publications"
+title: Publications
+eyebrow: RESEARCH OUTPUT
 permalink: /publications/
-author_profile: true
+description: Explore our work in power systems, trustworthy AI, quantum computing, and resilient energy infrastructure.
 ---
-
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+<div class="publication-tools" data-publication-tools hidden><div class="search-field"><label for="publication-search">Search publications</label><input id="publication-search" type="search" placeholder="Search title, author, venue, or topic…" autocomplete="off"></div><div><label for="publication-year">Year</label><select id="publication-year"><option value="">All years</option>{% assign years = site.publications | map: 'year' | uniq | sort | reverse %}{% for year in years %}<option value="{{ year }}">{{ year }}</option>{% endfor %}</select></div><div><label for="publication-type">Type</label><select id="publication-type"><option value="">All publications</option><option value="Journal">Journal articles</option><option value="Conference">Conference papers</option></select></div><button class="reset-button" id="reset-filters" type="button">Reset</button></div><div class="results-bar"><p id="publication-count" aria-live="polite">{{ site.publications.size }} publications</p><span>Sorted by year, newest first</span></div><div class="publication-list">{% assign publications = site.publications | sort: 'date' | reverse %}{% for pub in publications %}{% include lab/publication.html %}{% endfor %}</div><p class="empty-state" id="no-results" hidden>No publications match these filters. Try another term or reset the filters.</p><noscript><p>All publications are listed below. Enable JavaScript to search and filter.</p></noscript>

@@ -1,0 +1,3 @@
+Potential author-name collision: not displayed pending PI review.
+
+3. Zhang, S., Yu, M., Zhao, T., Geng, Y., Liu, Z., Zhang, X., & Yu, L. (2025). Effects of probiotics on gut microbiota in poultry. 11(3), 754–768. https://doi.org/10.3934/microbiol.2025032

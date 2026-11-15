@@ -1,0 +1,49 @@
+name: Build and publish AIRE-Q Lab
+on:
+  push:
+    branches: [master, main, 'codex/**']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: lab-pages-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+      - name: Build the Academic Pages site
+        run: bundle exec jekyll build --destination dist --trace
+        env:
+          JEKYLL_ENV: production
+      - name: Check generated pages and local links
+        run: |
+          python3 -m pip install 'PyYAML>=6.0,<7'
+          python3 scripts/check_site.py dist --baseurl /X-Grid-Lab.github.io
+      - uses: actions/upload-artifact@v4
+        with:
+          name: aireq-lab-site
+          path: dist
+      - uses: actions/upload-pages-artifact@v3
+        if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
+        with:
+          path: dist
+  deploy:
+    if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
