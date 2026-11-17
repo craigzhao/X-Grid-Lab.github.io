@@ -1,0 +1,14 @@
+name: Read original member directory
+on:
+  push:
+    branches: ["migration/member-directory-20261116"]
+permissions:
+  contents: read
+jobs:
+  directory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read the public original directory
+        run: python3 scripts/read_member_directory.py
