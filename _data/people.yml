@@ -19,7 +19,8 @@ students:
   initials: LL
   email: lxl4205@mavs.uta.edu
   note: 'Research: Multimodality alignment and fusion'
-  photo: ''
+  photo: /images/people/luofei-source.png
+  photo_crop: crop-luofei
 - name: Vikrampruthvira Decharwar
   role: Ph.D. Student
   joined: Fall 2025
@@ -31,10 +32,12 @@ students:
   role: Student Researcher
   joined: Fall 2026
   initials: XN
-  photo: ''
+  photo: /images/people/members-fall-2026.png
+  photo_crop: crop-xiaofei
 - name: Ji Xia
   role: Student Researcher
   joined: Fall 2026
   initials: JX
-  photo: ''
+  photo: /images/people/members-fall-2026.png
+  photo_crop: crop-ji-xia
 alumni: []
