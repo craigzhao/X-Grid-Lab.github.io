@@ -1,0 +1,42 @@
+{
+  "source_page": "https://aireqlab.uta.edu/cp_school_directory/members/",
+  "verification": "User-provided screenshots of the original member directory, received 2026-11-16 America/Chicago.",
+  "members": [
+    {
+      "name": "Xiaofei Nie",
+      "joined": "Fall 2026",
+      "source_file": "image(2).png",
+      "crop": {
+        "x": 102,
+        "y": 194,
+        "width": 530,
+        "height": 752,
+        "source_width": 937,
+        "source_height": 1975
+      },
+      "status": "Portrait verified from PI-supplied screenshot; publication pending explicit approval"
+    },
+    {
+      "name": "Ji Xia",
+      "joined": "Fall 2026",
+      "source_file": "image(2).png",
+      "crop": {
+        "x": 102,
+        "y": 1225,
+        "width": 525,
+        "height": 658,
+        "source_width": 937,
+        "source_height": 1975
+      },
+      "status": "Portrait verified from PI-supplied screenshot; publication pending explicit approval"
+    },
+    {
+      "name": "Luofei Liang",
+      "joined": "Spring 2026",
+      "research": "Multimodality alignment and fusion",
+      "source_file": "image(3).png",
+      "status": "Portrait verified from PI-supplied screenshot; publication pending explicit approval"
+    }
+  ],
+  "notes": "PI-supplied screenshots verify the listed names, terms and portraits. Portrait files are staged locally and are not published. No faces, appearance or backgrounds were generated or retouched. Unverified degree programs and email addresses for the two new members are omitted. Vikrampruthvira Decharwar retains initials until a portrait is supplied."
+}

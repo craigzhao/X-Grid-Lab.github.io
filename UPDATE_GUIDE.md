@@ -57,6 +57,8 @@ Edit `_data/people.yml`. Under `students:`, add an entry with the same indentati
 
 To add a photo, upload it to `images/people/` and set `photo: /images/people/student-name.jpg`. A verified public HTTPS image URL also works. Use a portrait, ideally at least 600 pixels wide. The site crops the display without modifying the original. Empty `photo` fields display initials. New students appear automatically on both the homepage and People page. Move graduates into the `alumni` list when appropriate.
 
+Screenshot-sourced portraits use `photo_crop` display classes. When replacing one with a standalone portrait, remove its `photo_crop` line so it displays normally. Keep the student's original photo unchanged.
+
 ## Update research or courses
 
 Edit `_data/research.yml` to revise the four research directions, topics, and related paper IDs. Edit `_data/programs.yml` for collaborative research programs and their public source links. To add a course, copy an existing file in `_teaching/`, edit the front matter and body, and choose its `order` value. Course terms are explicit so old offerings are not presented as current enrollment information.
