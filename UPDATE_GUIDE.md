@@ -33,13 +33,20 @@ category: Journal
 authors: "Author, A., Zhao, T., & Author, B."
 venue: "Exact journal name"
 doi: "10.xxxx/replace-with-real-doi"
+source_url: "https://publisher.example/replace-with-real-record"
+source_label: "Publisher"
+scholar_url: "https://scholar.google.com/citations?view_op=view_citation&user=dCbhGekAAAAJ&citation_for_view=replace-with-real-record-id"
 citation: "Full citation with authors, year, title, venue, and DOI."
 tags: [Power systems, Trustworthy AI]
 featured: false
 ---
 ```
 
-Use `Conference` for a conference paper. Add `volume` and `pages` if known. Only include `paperurl` or `codeurl` when you have a real URL. Upload a shareable manuscript to `files/` and use `paperurl: /files/my-paper.pdf`. Respect publisher rights when uploading manuscripts.
+Use `Conference` for a conference paper. The supported categories are `Journal`, `Conference`, `Preprint`, `Presentation`, `Thesis`, and `Report`. Use `Presentation` for a conference abstract or talk that is not a conference paper. Keep the published version and any preprint clearly distinguished when reviewing duplicates; the category alone does not establish a manuscript's review or acceptance status.
+
+Every category requires a real DOI or a valid public `source_url`, for example the publisher record, arXiv record, conference abstract, institutional thesis record, or report page. Omit `doi` when no verified DOI is available. Use `source_label` such as `Publisher`, `arXiv`, `Conference abstract`, `Thesis`, or `Report`. The website links to the DOI when present and otherwise to this source. `source_url` remains optional when a DOI is supplied. Add `scholar_url` only when you have the actual Google Scholar citation record. All categories require the full `citation`; items without a DOI should cite their source URL instead. The profile link on the publications page is separate from individual citation records.
+
+Add `volume`, `issue`, and `pages` if known. For an article identifier or e-locator, use `article_number`; the website displays `Article N` instead of `pages` when this is present. Include the same verified volume, issue, and page range or article identifier in `citation`, which is the exact text copied by the citation button. Do not retain early-access placeholder pagination such as `1–1` after final metadata is available. Only include `paperurl` or `codeurl` when you have a real URL. Upload a shareable manuscript to `files/` and use `paperurl: /files/my-paper.pdf`. Respect publisher rights when uploading manuscripts. Replace every example URL in the template with a verified record, or omit optional fields that you do not have.
 
 Set `featured: true` to make a paper eligible for the homepage; the three newest featured papers are shown. The `pub_id` must be unique and can also connect a paper to a research area in `_data/research.yml`. When only the year is known, `date: YEAR-01-01` is a sorting key, not a claim about the exact publication date.
 

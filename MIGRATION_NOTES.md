@@ -73,3 +73,28 @@ Additional research-project sources:
 - https://doi.org/10.1038/s44172-026-00670-z
 - https://www.bnl.gov/community/docs/cac/2023/2023-03-09-cac-climate-energy-presentation.pdf
 - https://www.nysrc.org/wp-content/uploads/2023/06/BNL-Climate-Energy-Resilience-Kickoff-021723.pdf
+
+
+## Google Scholar bibliography reconciliation, November 17, 2026
+
+Profile: https://scholar.google.com/citations?user=dCbhGekAAAAJ&hl=en . The complete profile page returned 74 records. The source website had 44 publication records. This update adds 31 missing scholarly outputs and retains the two independently verified existing publications not listed on Scholar (the coordinated T&D state-estimation conference paper and the Frontiers editorial), producing 75 records. The BNL repository version of the NAPS dynamic-line-rating conference paper is represented by the existing conference record rather than duplicated.
+
+The 31 additions comprise 8 journal items (including a corrigendum), 14 conference papers, 4 preprints, 3 conference presentations/abstracts, 1 technical report, and 1 doctoral thesis. Distinct conference papers on transmission switching, stochastic UC with BESS, and RL battery bidding remain separate from the related journal articles. No citation-count or h-index snapshot is displayed.
+
+Google Scholar supplies discovery and profile-record links. Author-verified Crossref records (publisher-deposited metadata), publisher pages, arXiv, AMS programs, the University of Manchester thesis, and the BNL report establish citation details. Source records and comparison snapshots are preserved in the excluded migration directory. Journal years follow verified final issues rather than old online-first years where applicable. IEEE's placeholder pages 1-1 are omitted. The two-stage quantum switching paper now uses 2026, volume 41(3), pages 2174-2186; the quantum Volt-VAR paper uses volume 12, pages 833-844. Existing publication paths and research-link IDs are preserved.
+
+The operator-learning preprint explicitly links arXiv:2301.12538v1, the 2023 original version coauthored by Tianqiao Zhao. The revised 2026 version has a different author list and is not attributed to him. Preprints, presentations, reports, and the thesis use separate types and source links; they are not presented as journal or conference papers. The unrelated poultry/probiotic paper remains excluded.
+
+Additional primary sources:
+- https://api.crossref.org/works?query.author=Tianqiao%20Zhao&rows=100
+- https://api.crossref.org/works/10.1109/TPWRS.2025.3645024
+- https://api.crossref.org/works/10.1109/OAJPE.2025.3634993
+- https://api.crossref.org/works/10.1109/RWS58133.2023.10284644
+- https://arxiv.org/abs/2611.08929
+- https://arxiv.org/abs/2610.19565
+- https://arxiv.org/abs/2607.24539
+- https://arxiv.org/abs/2301.12538v1
+- https://ams.confex.com/ams/104ANNUAL/webprogram/Paper440020.html
+- https://ams.confex.com/ams/106ANNUAL/meetingapp.cgi/Person/316557
+- https://www.bnl.gov/isd/docs/ess-final-report-jul-31-2021.pdf
+- https://pure.manchester.ac.uk/ws/portalfiles/portal/87764694/FULL_TEXT.PDF

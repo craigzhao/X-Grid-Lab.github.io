@@ -37,7 +37,8 @@ class Links(HTMLParser):
 def check_publications(source, errors):
     """Catch content mistakes before a routine GitHub edit is deployed."""
     seen = {'doi': {}, 'pub_id': {}}
-    required = ['title', 'pub_id', 'date', 'year', 'category', 'authors', 'venue', 'doi', 'citation']
+    required = ['title', 'pub_id', 'date', 'year', 'category', 'authors', 'venue', 'citation']
+    categories = ['Journal', 'Conference', 'Preprint', 'Presentation', 'Thesis', 'Report']
     publications = sorted((source / '_publications').glob('*.md'))
     if not publications:
         errors.append(f'{source}: no publication source files found')
@@ -53,12 +54,20 @@ def check_publications(source, errors):
             missing = [key for key in required if not data.get(key)]
             if missing:
                 errors.append(f'{label}: missing required fields: {", ".join(missing)}')
-            if data.get('category') not in ['Journal', 'Conference']:
-                errors.append(f'{label}: category must be Journal or Conference')
+            if data.get('category') not in categories:
+                errors.append(f'{label}: category must be one of {", ".join(categories)}')
+            if not data.get('doi') and not data.get('source_url'):
+                errors.append(f'{label}: every item requires a DOI or source_url')
             if data.get('pub_id') and not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', str(data['pub_id'])):
                 errors.append(f'{label}: pub_id must be a lowercase hyphenated identifier')
             if data.get('doi') and not re.fullmatch(r'10\.\d{4,9}/\S+', str(data['doi']), re.I):
                 errors.append(f'{label}: doi must contain the DOI identifier, without a URL prefix')
+            for key in ['source_url', 'scholar_url']:
+                if data.get(key):
+                    value = str(data[key])
+                    url = urlsplit(value)
+                    if url.scheme not in ['http', 'https'] or not url.netloc or re.search(r'\s', value):
+                        errors.append(f'{label}: {key} must be a valid public HTTP(S) URL')
             if data.get('date') and data.get('year'):
                 date = data['date']
                 if isinstance(date, str):

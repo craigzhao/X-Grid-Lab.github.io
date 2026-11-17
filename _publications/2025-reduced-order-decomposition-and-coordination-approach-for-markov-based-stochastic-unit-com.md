@@ -13,4 +13,7 @@ citation: Raghunathan, N., Wang, Z., Bragin, M. A., Luh, P. B., Yan, B., Zhao, T
   IEEE Access, 13, 65403–65419. https://doi.org/10.1109/access.2025.3553410
 tags: []
 featured: false
+scholar_url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=dCbhGekAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=dCbhGekAAAAJ:NMxIlDl6LWMC
+volume: '13'
+pages: 65403–65419
 ---

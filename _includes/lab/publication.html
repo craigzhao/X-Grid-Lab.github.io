@@ -1,2 +1,15 @@
-<article class="publication" data-publication data-year="{{ pub.year }}" data-type="{{ pub.category | escape }}" data-search="{{ pub.title | escape }} {{ pub.authors | escape }} {{ pub.venue | escape }} {{ pub.tags | join: ' ' | escape }}">
-<div class="publication-year">{{ pub.year }}<span>{{ pub.category }}</span></div><div class="publication-main"><h3><a href="{{ pub.url | relative_url }}">{{ pub.title }}</a></h3><p class="authors">{{ pub.authors }}</p><p class="venue">{{ pub.venue }}{% if pub.volume %}, {{ pub.volume }}{% endif %}{% if pub.pages %}, {{ pub.pages }}{% endif %}</p><div class="publication-links"><a href="https://doi.org/{{ pub.doi }}">DOI <span aria-hidden="true">↗</span></a>{% if pub.paperurl %}<a href="{{ pub.paperurl | relative_url }}">PDF</a>{% endif %}{% if pub.codeurl %}<a href="{{ pub.codeurl }}">Code ↗</a>{% endif %}<details><summary>Cite</summary><pre class="citation-text">{{ pub.citation | escape }}</pre><button class="copy-button" data-copy-previous>Copy citation</button></details></div></div></article>
+<article class="publication" data-publication data-year="{{ pub.year }}" data-type="{{ pub.category | escape }}" data-search="{{ pub.title | escape }} {{ pub.authors | escape }} {{ pub.venue | escape }} {{ pub.category | escape }} {{ pub.source_label | escape }} {{ pub.tags | join: ' ' | escape }}">
+  <div class="publication-year">{{ pub.year }}<span>{{ pub.category | escape }}</span></div>
+  <div class="publication-main">
+    <h3><a href="{{ pub.url | relative_url }}">{{ pub.title | escape }}</a></h3>
+    <p class="authors">{{ pub.authors | escape }}</p>
+    <p class="venue">{{ pub.venue | escape }}{% if pub.volume and pub.volume != '' %}, {{ pub.volume | escape }}{% if pub.issue and pub.issue != '' %}({{ pub.issue | escape }}){% endif %}{% else %}{% if pub.issue and pub.issue != '' %}, Issue {{ pub.issue | escape }}{% endif %}{% endif %}{% if pub.article_number and pub.article_number != '' %}, Article {{ pub.article_number | escape }}{% else %}{% if pub.pages and pub.pages != '' %}, {{ pub.pages | escape }}{% endif %}{% endif %}</p>
+    <div class="publication-links">
+      {% if pub.doi and pub.doi != '' %}<a href="https://doi.org/{{ pub.doi | escape }}">DOI <span aria-hidden="true">↗</span></a>{% else %}{% if pub.source_url and pub.source_url != '' %}<a href="{{ pub.source_url | escape }}">{{ pub.source_label | default: 'Source' | escape }} <span aria-hidden="true">↗</span></a>{% endif %}{% endif %}
+      {% if pub.paperurl and pub.paperurl != '' %}<a href="{{ pub.paperurl | relative_url }}">PDF</a>{% endif %}
+      {% if pub.codeurl and pub.codeurl != '' %}<a href="{{ pub.codeurl | escape }}">Code ↗</a>{% endif %}
+      {% if pub.scholar_url and pub.scholar_url != '' %}<a href="{{ pub.scholar_url | escape }}">Google Scholar ↗</a>{% endif %}
+      <details><summary>Cite</summary><pre class="citation-text">{{ pub.citation | escape }}</pre><button class="copy-button" type="button" data-copy-previous>Copy citation</button></details>
+    </div>
+  </div>
+</article>
