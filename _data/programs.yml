@@ -1,10 +1,70 @@
-- title: Grid foundation models
+- id: gridfm-2-0
+  group: current
+  title: Grid foundation models
+  full_title: GridFM 2.0
   label: Genesis Mission Phase II
-  description: In a Brookhaven-led collaboration, UTA develops agentic workflows that connect grid foundation models to planning applications and validation. The work links model capabilities to practical utility decisions as new loads and resources reshape the grid.
-  url: /news/2026-09-28-genesis-gridfm/
-  link_text: Project overview
-- title: Advanced transformers & digital twins
+  role: "UTA contribution: agentic workflows, applications, and grid validation"
+  timeframe_label: Announced
+  timeframe: September 28, 2026
+  description: In a Brookhaven-led collaboration, UTA develops agentic workflows that connect grid foundation models to practical planning applications. The work brings model ensembles, engineering tools, and grid validation into an application layer that supports utility decisions as new loads and resources reshape the grid.
+  source_url: https://www.uta.edu/news/news-releases/2026/09/28/uta-lands-second-genisis-mission-research-project
+  link_text: UTA announcement
+
+- id: advanced-transformers
+  group: current
+  title: Advanced transformers & digital twins
+  full_title: A Scalable and Flexible Co-Model and Monitoring System for Advanced Transformer Considering Interactions with Power Electronics Assets
   label: DOE Office of Electricity collaboration
-  description: We contribute to a Brookhaven-led project on scalable co-modeling and monitoring of advanced transformers and power-electronics assets. The effort studies their coupled dynamics and develops a foundation for digital twins and model validation.
+  role: "UTA lead: Tianqiao Zhao"
+  timeframe_label: Project period
+  timeframe: October 1, 2025–September 30, 2027
+  description: This Brookhaven-led collaboration develops models that capture interactions between transformers and power-electronics assets. The effort connects coupled dynamic models, monitoring, and digital twins with validation under changing operating conditions and disturbances.
   source_url: https://www.energy.gov/documents/scalable-and-flexible-meng-yue
   link_text: DOE project presentation
+
+- id: integrated-wind-tools
+  group: current
+  title: Wind forecasting & grid management
+  full_title: Development of Integrated Wind Power Forecasting and Grid Management Tools to Improve Wind Energy Deployment
+  label: DOE wind-energy collaboration
+  role: "UTA lead: Tianqiao Zhao"
+  timeframe_label: Funded
+  timeframe: '2025'
+  description: The project integrates weather forecasting, machine-learning downscaling, uncertainty evaluation, and grid-management tools. It connects forecasts at relevant spatial and temporal scales with engineering decisions about wind integration, reliable operation, and the deployment of renewable energy.
+  source_url: https://www.wichita.edu/research/ResearchNewsletter/2025-06-Newsletter.php
+  link_text: Partner award listing
+
+- id: bnl-emergency-control
+  group: previous
+  title: Deep learning for grid emergencies
+  full_title: A Deep Learning Based Online Platform for Critical Anomaly Detection and Emergency Control to Enhance Grid Reliability and Resiliency
+  label: DOE Office of Electricity · Advanced Grid Modeling
+  role: "Earlier Brookhaven contribution: learning grid dynamics and control"
+  status: Completed project
+  description: Research on data-driven monitoring and emergency actions to limit cascading failures. The work links learned grid dynamics with contingency assessment, load shedding, and controlled islanding, providing a foundation for trustworthy learning-based control.
+  source_url: https://www.bnl.gov/isd/agm/deep-learning.php
+  link_text: Brookhaven project page
+
+- id: bnl-wecc-load-model
+  group: previous
+  title: Learning composite-load parameters
+  full_title: Hierarchical Machine Learning-based Optimal Parameterization Scheme for WECC Composite Load Model under All Disturbances
+  label: Brookhaven · Advanced Grid Modeling
+  role: Earlier Brookhaven research contribution
+  timeframe_label: Project started
+  timeframe: May 2022
+  description: Research on hierarchical imitation and reinforcement learning for parameterizing the WECC composite load model. The approach uses simulation and dynamic-response comparisons to represent aggregated loads across disturbances, including cases with incomplete information about load devices and feeder structure.
+  source_url: https://www.bnl.gov/isd/agm/wecc-clm.php
+  link_text: Brookhaven project page
+
+- id: bnl-climate-energy
+  group: previous
+  title: Climate, energy & infrastructure resilience
+  full_title: Novel Climate-Energy Sector Modeling Framework to Project Energy Demands and Infrastructure Resiliency in Urban Environments
+  label: Brookhaven climate-energy research
+  role: "Team member: power-outage prediction"
+  timeframe_label: Launched
+  timeframe: '2023'
+  description: A cross-disciplinary effort connecting weather and climate models with energy demand, grid infrastructure, and outage prediction. Tianqiao Zhao contributed to the team’s work on learning weather-related outage risk, supporting the assessment of infrastructure resilience under extreme events and future climate scenarios.
+  source_url: https://www.bnl.gov/community/docs/cac/2023/2023-03-09-cac-climate-energy-presentation.pdf
+  link_text: Brookhaven project presentation

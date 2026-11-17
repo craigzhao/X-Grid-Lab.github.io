@@ -17,6 +17,8 @@ description: "One sentence explaining the update."
 
 Below the second `---`, write the announcement using ordinary text or Markdown. Add a source link if appropriate. Commit the file. News automatically appears newest first, and the latest three entries appear on the homepage. The example above is only a template; it is not a published announcement.
 
+For an activity known only by month or season, keep `date` as a sorting key and add `display_date: January 2025` with `date_value: '2025-01'`, or `display_date: Summer 2024` with `date_value: '2024'`. All news views use these fields so an unknown day is never displayed as an event date. Use the actual conference program date rather than a recording or slides upload date. A service overview may use its publication date without implying an appointment date.
+
 ## Add a publication
 
 Create `_publications/2026-short-paper-name.md`:
@@ -61,7 +63,7 @@ Screenshot-sourced portraits use `photo_crop` display classes. When replacing on
 
 ## Update research or courses
 
-Edit `_data/research.yml` to revise the four research directions, topics, and related paper IDs. Edit `_data/programs.yml` for collaborative research programs and their public source links. To add a course, copy an existing file in `_teaching/`, edit the front matter and body, and choose its `order` value. Course terms are explicit so old offerings are not presented as current enrollment information.
+Edit `_data/research.yml` to revise the four research directions, topics, and related paper IDs. Edit `_data/programs.yml` for research projects and their source links. Use `group: current` for the featured collaborations and `group: previous` for earlier Brookhaven work. Each record includes a short title, exact project title, description, role, timeframe where known, and source link. Keep earlier institutional contributions separate from UTA awards and describe submitted proposals as proposals if they are ever published. To add a course, copy an existing file in `_teaching/`, edit the front matter and body, and choose its `order` value. Course terms are explicit so old offerings are not presented as current enrollment information.
 
 ## Check an update
 

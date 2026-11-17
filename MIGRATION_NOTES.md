@@ -43,3 +43,33 @@ To retain `https://aireqlab.uta.edu/`, UTA must authorize the hosting/DNS arrang
 ## Update behavior
 
 Routine changes are Markdown or YAML edits. The GitHub Actions workflow rebuilds and deploys commits to the default branch after Pages is enabled. No scheduled crawling or unattended import is configured. Users can make edits through GitHub or ask ChatGPT to apply updates.
+
+
+## Activities and projects update, November 17, 2026
+
+Six source-linked activity updates were added: selected IEEE task-force service, the July 20, 2026 trustworthy-AI panel, the July 30, 2025 quantum research/education panel, Grid Edge panel leadership in January 2025, summer 2024 Brookhaven school outreach, and the November 29, 2023 Resilience Week session. Conference programs establish event dates; IEEE Resource Center upload dates are not treated as event dates. Month/season-only events use display_date and date_value; the date field is only a sorting key for those entries. The service overview date is the date of this website update, not the start of an appointment.
+
+Public IEEE sources verify the RL task-force secretary role and quantum task-force existence. The quantum co-chair role is based on the PI's own January 17, 2025 statement, with no invented appointment term or assertion that the standalone task force remains active. The 2024 PSOPE annual report describes a planned January 2025 merger into a broader working group. Proposed agentic-AI and operator-theory task forces were not represented as approved appointments.
+
+Research now includes Genesis/GridFM, DOE advanced-transformer co-modeling, and integrated wind forecasting. The PI's supplied 2025-2026 annual research statement confirms funded 2025 wind and transformer projects and PI roles; the site uses UTA lead to distinguish consortium leadership. Internal amounts, submitted proposals, and the review document itself are not published. The partner award listing establishes funded wind-project activity but does not independently establish Zhao's role. The DOE transformer presentation supplies the October 2025-September 2027 project term. Earlier Brookhaven contributions are labeled separately and do not imply current UTA funding or project leadership.
+
+Activity sources:
+- https://ieee-pes.org/trending-tech/machine-learning-for-microgrids-resiliency-stability-control-and-operation/
+- https://ieee-pes.org/wp-content/uploads/2025/07/Annual_Report_PSOPE_2024.pdf
+- https://resourcecenter.ieee-pes.org/conferences/general-meeting/pes_cvs_gm26_080426_amps1_sld
+- https://pes-gm.org/wp-content/uploads/2026/07/2026-IEEE-PES-GM-Print-Program.pdf
+- https://resourcecenter.ieee-pes.org/conferences/general-meeting/pes_cvs_gm25_0727_peecpl06_sld
+- https://pes-gm.org/wp-content/uploads/2025/07/7.17.25-Program-_-2025-IEEE-PES-GM-.pdf
+- https://resourcecenter.ieee.org/conferences/grid-edge/pes_cvs_ge25_pl02_020325_sld
+- https://pes-gridedge.org/ge-2025/
+- https://www.bnl.gov/newsroom/news.php?a=221999
+- https://inl.gov/content/uploads/2023/07/2023-Resilience-Week-Agenda.pdf
+
+Additional research-project sources:
+- https://www.wichita.edu/research/ResearchNewsletter/2025-06-Newsletter.php
+- https://www.bnl.gov/isd/agm/index.php
+- https://www.bnl.gov/isd/agm/deep-learning.php
+- https://www.bnl.gov/isd/agm/wecc-clm.php
+- https://doi.org/10.1038/s44172-026-00670-z
+- https://www.bnl.gov/community/docs/cac/2023/2023-03-09-cac-climate-energy-presentation.pdf
+- https://www.nysrc.org/wp-content/uploads/2023/06/BNL-Climate-Energy-Resilience-Kickoff-021723.pdf
