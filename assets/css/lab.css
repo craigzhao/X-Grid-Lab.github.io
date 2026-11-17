@@ -41,4 +41,19 @@ html{scroll-padding-top:118px}body{background:var(--paper)}
 @media(prefers-reduced-motion:reduce){.reveal-ready{opacity:1;transform:none}.hero-visual,.hero-visual:hover,.research-tile:hover,.person-card:hover,.team-preview-card:hover,.button:hover{transform:none}.person-card:hover .person-photo img,.team-preview-card:hover img{transform:none}}
 @media print{.site-header{position:static}.hero{background:#fff;color:#000;min-height:0;display:block}.hero h1,.hero h1 em,.hero p,.hero-note a{color:#000}.hero-visual,.hero-proof,.hero-scroll,.team-preview{display:none}.hero.shell{padding:0}.reveal-ready{opacity:1;transform:none}.person-card,.director-portrait{box-shadow:none;break-inside:avoid}.person-body h3{font-size:18pt}.people-grid{grid-template-columns:1fr 1fr}.site-footer{display:none}.page-heading{background:#fff}.page-heading:after{display:none}}
 
+/* Exact CSS windows into the PI-supplied screenshots; source pixels stay intact. */
+.photo-crop .portrait-source{display:block;position:relative;overflow:hidden;flex:0 0 100%;width:100%;aspect-ratio:var(--portrait-ratio);min-width:0}
+.photo-crop .portrait-source img{position:absolute;display:block;max-width:none;width:var(--portrait-source-width);height:auto;aspect-ratio:auto;object-fit:initial;left:var(--portrait-source-left);top:var(--portrait-source-top);transform:none;transition:none;border-radius:0}
+.crop-xiaofei{--portrait-ratio:530/752;--portrait-source-width:176.7924528302%;--portrait-source-left:-19.2452830189%;--portrait-source-top:-25.7978723404%}
+.crop-ji-xia{--portrait-ratio:525/658;--portrait-source-width:178.4761904762%;--portrait-source-left:-19.4285714286%;--portrait-source-top:-186.1702127660%}
+.crop-luofei{--portrait-ratio:1;--portrait-source-width:348.6842105263%;--portrait-source-left:-12.0300751880%;--portrait-source-top:-40.2255639098%}
+.crop-luofei .portrait-source{width:117.5%;flex-basis:117.5%}
+.person-card:hover .photo-crop .portrait-source img,.team-preview-card:hover .photo-crop .portrait-source img{transform:none}
+.crop-xiaofei .portrait-source{align-self:flex-start}
+.team-preview-portrait.crop-luofei .portrait-source{width:108%;flex-basis:108%}
+@media(min-width:1151px){.team-preview-grid[data-students="4"]{grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}.team-preview-grid[data-students="4"] .team-preview-body{padding-inline:17px}.team-preview-grid[data-students="4"] h3{font-size:24px;overflow-wrap:anywhere}}
+@media(min-width:961px) and (max-width:1150px){.team-preview-grid[data-students="4"]{grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}.team-preview-grid[data-students="4"] .team-preview-body{padding:20px 13px}.team-preview-grid[data-students="4"] h3{font-size:20px;overflow-wrap:anywhere}.team-preview-grid[data-students="4"] .team-preview-role{font-size:9px}}
+@media(max-width:960px){.team-preview-portrait.crop-luofei .portrait-source{width:103%;flex-basis:103%}.team-preview-grid[data-students="4"]>.team-preview-card:first-child{grid-column:1/-1;display:grid;grid-template-columns:minmax(140px,220px) 1fr;align-items:center}.team-preview-grid[data-students="4"]>.team-preview-card:first-child .team-preview-portrait{width:100%;height:100%;aspect-ratio:4/4.7}.team-preview-grid[data-students="4"]>.team-preview-card:first-child .team-preview-portrait img{width:100%;height:100%;aspect-ratio:auto;object-fit:cover}.team-preview-grid[data-students="4"]>.team-preview-card:first-child .team-preview-body{padding:27px}}
+@media(max-width:680px){.team-preview-portrait.crop-luofei .portrait-source{width:117%;flex-basis:117%}.team-preview-grid[data-students="4"]>.team-preview-card:first-child{grid-template-columns:116px 1fr}.team-preview-grid[data-students="4"]>.team-preview-card:first-child .team-preview-body{padding:20px}.team-preview-grid[data-students="4"]>.team-preview-card:first-child h3{font-size:25px}}
+
 @media(min-width:961px){.team-preview-grid{grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}}
