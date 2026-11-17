@@ -57,3 +57,10 @@ html{scroll-padding-top:118px}body{background:var(--paper)}
 @media(max-width:680px){.team-preview-portrait.crop-luofei .portrait-source{width:117%;flex-basis:117%}.team-preview-grid[data-students="4"]>.team-preview-card:first-child{grid-template-columns:116px 1fr}.team-preview-grid[data-students="4"]>.team-preview-card:first-child .team-preview-body{padding:20px}.team-preview-grid[data-students="4"]>.team-preview-card:first-child h3{font-size:25px}}
 
 @media(min-width:961px){.team-preview-grid{grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}}
+
+/* Project details retain readable titles and metadata on small screens. */
+.project-full-title{max-width:850px;font-size:13px;line-height:1.75;color:var(--muted)}
+.project-meta{display:flex;flex-wrap:wrap;gap:12px 34px;margin:20px 0 24px;padding-block:17px;border-block:1px solid #cfdbd6;font-size:12px;line-height:1.7}
+.project-meta>div{min-width:0;max-width:100%}.project-meta dt{font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:#587078;margin-bottom:4px}.project-meta dd{margin:0;overflow-wrap:anywhere}
+#earlier-projects{margin-top:65px}#collaborations,#earlier-projects{scroll-margin-top:110px}.project-navigation{display:flex;flex-wrap:wrap;gap:12px 26px;margin-block:28px 40px;font-size:12px}.project-navigation a{border-bottom:1px solid #b7cbc7;padding-bottom:5px}
+@media(max-width:680px){.project-meta{gap:14px 24px;font-size:11px}.project-full-title{font-size:12px}#earlier-projects{margin-top:42px}}

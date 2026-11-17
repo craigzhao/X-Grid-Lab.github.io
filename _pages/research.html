@@ -5,6 +5,33 @@ permalink: /research/
 description: Learning, optimization, and control for reliable power systems, with physics-aware AI and emerging quantum technologies.
 ---
 <div class="research-intro"><p>We ask how intelligent methods can become dependable engineering tools. Across our work, the aim is the same: decisions that respect the physics, account for uncertainty, and improve the resilience of energy systems.</p><nav class="topic-navigation" aria-label="Research areas">{% for area in site.data.research %}<a href="#{{ area.id }}">{{ area.number }} / {{ area.title }} ↓</a>{% endfor %}</nav></div>
+<nav class="project-navigation" aria-label="Projects and capabilities"><a href="#collaborations">Research collaborations</a><a href="#earlier-projects">Earlier Brookhaven projects</a><a href="#testbed">Research testbed</a></nav>
 {% for area in site.data.research %}<section class="research-detail" id="{{ area.id }}"><div class="research-index">{{ area.number }}</div><div><p class="eyebrow">{{ area.subtitle }}</p><h2>{{ area.title }}</h2><p>{{ area.description }}</p><div class="tags">{% for topic in area.topics %}<span>{{ topic }}</span>{% endfor %}</div><h3 class="small-heading">Related publications</h3><ul class="related-list">{% for pubid in area.publication_ids %}{% for paper in site.publications %}{% if paper.pub_id == pubid %}<li><a href="{{ paper.url | relative_url }}">{{ paper.title }} <span aria-hidden="true">↗</span></a><span>{{ paper.year }}</span></li>{% endif %}{% endfor %}{% endfor %}</ul></div></section>{% endfor %}
-<section id="collaborations" aria-labelledby="collaborations-heading"><div class="section-heading"><div><p class="eyebrow">COLLABORATIVE RESEARCH</p><h2 id="collaborations-heading">From shared models<br>to engineering applications.</h2></div></div>{% for program in site.data.programs %}<article class="project-callout"><p class="eyebrow">{{ program.label }}</p><h3>{{ program.title }}</h3><p>{{ program.description }}</p>{% if program.url %}<a class="text-link" href="{{ program.url | relative_url }}">{{ program.link_text }} <span aria-hidden="true">↗</span></a>{% else %}<a class="text-link" href="{{ program.source_url }}">{{ program.link_text }} <span aria-hidden="true">↗</span></a>{% endif %}</article>{% endfor %}</section>
+<section id="collaborations" aria-labelledby="collaborations-heading">
+  <div class="section-heading"><div><p class="eyebrow">MAIN RESEARCH COLLABORATIONS</p><h2 id="collaborations-heading">From shared models<br>to engineering applications.</h2></div></div>
+  {% for program in site.data.programs %}{% if program.group == 'current' %}
+  <article class="project-callout" id="{{ program.id }}">
+    <p class="eyebrow">{{ program.label | escape }}</p>
+    <h3>{{ program.title | escape }}</h3>
+    <p class="project-full-title">{{ program.full_title | escape }}</p>
+    <dl class="project-meta"><div><dt>Role</dt><dd>{{ program.role | escape }}</dd></div>{% if program.timeframe %}<div><dt>{{ program.timeframe_label | escape }}</dt><dd>{{ program.timeframe | escape }}</dd></div>{% endif %}</dl>
+    <p>{{ program.description | escape }}</p>
+    <a class="text-link" href="{{ program.source_url }}">{{ program.link_text | escape }} <span aria-hidden="true">↗</span></a>
+  </article>
+  {% endif %}{% endfor %}
+</section>
+<section id="earlier-projects" aria-labelledby="earlier-projects-heading">
+  <div class="section-heading"><div><p class="eyebrow">RESEARCH FOUNDATIONS</p><h2 id="earlier-projects-heading">Earlier research at Brookhaven.</h2></div></div>
+  <p>These contributions reflect Tianqiao Zhao’s earlier work at Brookhaven National Laboratory and the research foundations that inform AIRE-Q today.</p>
+  {% for program in site.data.programs %}{% if program.group == 'previous' %}
+  <article class="project-callout" id="{{ program.id }}">
+    <p class="eyebrow">{{ program.label | escape }}</p>
+    <h3>{{ program.title | escape }}</h3>
+    <p class="project-full-title">{{ program.full_title | escape }}</p>
+    <dl class="project-meta"><div><dt>Role</dt><dd>{{ program.role | escape }}</dd></div>{% if program.timeframe %}<div><dt>{{ program.timeframe_label | escape }}</dt><dd>{{ program.timeframe | escape }}</dd></div>{% endif %}{% if program.status %}<div><dt>Status</dt><dd>{{ program.status | escape }}</dd></div>{% endif %}</dl>
+    <p>{{ program.description | escape }}</p>
+    <a class="text-link" href="{{ program.source_url }}">{{ program.link_text | escape }} <span aria-hidden="true">↗</span></a>
+  </article>
+  {% endif %}{% endfor %}
+</section>
 <section class="project-callout" id="testbed" aria-labelledby="testbed-heading"><p class="eyebrow">RESEARCH CAPABILITIES</p><h2 id="testbed-heading">An integrated cyber-physical testbed.</h2><p>Power-system emulation and a network digital twin connect our computational methods to realistic operating and communication conditions. This environment supports research on control, resilience, cyber-physical security, and the validation of AI and quantum methods.</p><a class="text-link" href="https://www.uta.edu/academics/schools-colleges/engineering/quantum">AIRE-Q in UTA's Quantum Initiative <span aria-hidden="true">↗</span></a></section>
