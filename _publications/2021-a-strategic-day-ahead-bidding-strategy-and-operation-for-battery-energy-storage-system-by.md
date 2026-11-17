@@ -1,7 +1,7 @@
 ---
 title: A Strategic Day-ahead bidding strategy and operation for battery energy storage system by reinforcement learning
 pub_id: a-strategic-day-ahead-bidding-strategy-and-operation-for-battery-energy-storage-system-by
-date: '2021-01-01'
+date: '2021-07-01'
 year: 2021
 category: Journal
 authors: Dong, Y., Dong, Z., Zhao, T., & Ding, Z.
@@ -13,4 +13,9 @@ tags:
 - Reinforcement learning
 - Energy storage
 featured: false
+volume: '196'
+source_url: https://doi.org/10.1016/j.epsr.2021.107229
+source_label: Publisher
+scholar_url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=dCbhGekAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=dCbhGekAAAAJ:aqlVkmm33-oC
+pages: '107229'
 ---

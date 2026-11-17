@@ -13,4 +13,9 @@ citation: 'Huang, X., Zhao, T., Huang, B., Zhang, Z., & Yue, M. (2025). Advancin
 tags:
 - Forecasting
 featured: false
+volume: '378'
+source_url: https://doi.org/10.1016/j.apenergy.2024.124753
+source_label: Publisher
+scholar_url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=dCbhGekAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=dCbhGekAAAAJ:k_IJM867U9cC
+pages: '124753'
 ---

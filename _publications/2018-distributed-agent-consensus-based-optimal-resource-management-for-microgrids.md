@@ -12,4 +12,10 @@ citation: Zhao, T., & Ding, Z. (2018). Distributed Agent Consensus-Based Optimal
 tags:
 - Microgrids
 featured: false
+volume: '9'
+issue: '1'
+pages: 443–452
+source_url: https://doi.org/10.1109/tste.2017.2740833
+source_label: Publisher
+scholar_url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=dCbhGekAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=dCbhGekAAAAJ:WF5omc3nYNoC
 ---
