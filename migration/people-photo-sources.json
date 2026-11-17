@@ -14,7 +14,8 @@
         "source_width": 937,
         "source_height": 1975
       },
-      "status": "Portrait verified from PI-supplied screenshot; publication pending explicit approval"
+      "status": "Publication approved by PI on 2026-11-17",
+      "asset": "images/people/members-fall-2026.png"
     },
     {
       "name": "Ji Xia",
@@ -28,15 +29,25 @@
         "source_width": 937,
         "source_height": 1975
       },
-      "status": "Portrait verified from PI-supplied screenshot; publication pending explicit approval"
+      "status": "Publication approved by PI on 2026-11-17",
+      "asset": "images/people/members-fall-2026.png"
     },
     {
       "name": "Luofei Liang",
       "joined": "Spring 2026",
       "research": "Multimodality alignment and fusion",
       "source_file": "image(3).png",
-      "status": "Portrait verified from PI-supplied screenshot; publication pending explicit approval"
+      "status": "Publication approved by PI on 2026-11-17",
+      "asset": "images/people/luofei-source.png",
+      "crop": {
+        "x": 64,
+        "y": 214,
+        "width": 532,
+        "height": 532,
+        "source_width": 1855,
+        "source_height": 765
+      }
     }
   ],
-  "notes": "PI-supplied screenshots verify the listed names, terms and portraits. Portrait files are staged locally and are not published. No faces, appearance or backgrounds were generated or retouched. Unverified degree programs and email addresses for the two new members are omitted. Vikrampruthvira Decharwar retains initials until a portrait is supplied."
+  "notes": "The PI explicitly approved publishing these three supplied portraits to the public GitHub repository and lab website. Screenshot files are stored unchanged; CSS clips their display. No faces, appearance or backgrounds were generated or retouched. Unverified degree programs and email addresses for the two new members are omitted. Vikrampruthvira Decharwar retains initials until a portrait is supplied."
 }
