@@ -1,0 +1,32 @@
+---
+title: Tianqiao Zhao
+seo_title: Tianqiao Zhao | Electrical Engineering, UT Arlington
+eyebrow: PRINCIPAL INVESTIGATOR · AIRE-Q LAB
+description: Tianqiao Zhao is an assistant professor of electrical engineering at UT Arlington and leads the AIRE-Q Lab. Explore his power systems research, publications, and teaching.
+permalink: /tianqiao-zhao/
+director_profile: true
+---
+
+{% assign director = site.data.people.director %}
+<section class="director-profile" aria-label="Academic profile">
+  <div class="person-portrait director-portrait">
+    {% if director.photo and director.photo != '' %}
+    <img src="{{ director.photo | escape }}" alt="{{ director.name | escape }}" width="480" height="564">
+    {% else %}
+    <span class="initials">{{ director.initials | escape }}</span>
+    {% endif %}
+  </div>
+  <div>
+    <h2>Research and teaching</h2>
+    <p>{{ director.bio | escape }}</p>
+    <p>At UT Arlington, he teaches power system reliability and advanced data analytics for power systems.</p>
+    <div class="profile-links">
+      <a class="text-link" href="{{ '/research/' | relative_url }}">Research projects ↗</a>
+      <a class="text-link" href="{{ '/publications/' | relative_url }}">Publications ↗</a>
+      <a class="text-link" href="{{ '/teaching/' | relative_url }}">Teaching ↗</a>
+      <a class="text-link" href="{{ director.faculty_url | escape }}">UTA faculty profile ↗</a>
+      <a class="text-link" href="{{ director.scholar_url | escape }}">Google Scholar ↗</a>
+      <a class="text-link" href="mailto:{{ director.email | escape }}">Email Prof. Zhao ↗</a>
+    </div>
+  </div>
+</section>

@@ -8,6 +8,7 @@ from pathlib import Path
 import argparse
 import datetime as dt
 import html
+import json
 import re
 import shutil
 from urllib.parse import urlsplit
@@ -115,6 +116,8 @@ def main():
  env.filters.update({
   'relative_url':lambda s:str(s) if urlsplit(str(s or '')).scheme or str(s or '').startswith('//') else site['baseurl']+'/'+str(s or '').lstrip('/'),
   'absolute_url':lambda s:str(s) if urlsplit(str(s or '')).scheme or str(s or '').startswith('//') else site['url']+site['baseurl']+'/'+str(s or '').lstrip('/'),
+  'jsonify':json.dumps,
+  'append':lambda s,x: str(s)+str(x),
   'escape':lambda s:html.escape(str(s or ''),quote=True),
   'default':lambda x,d: x if x else d,
   'where':lambda xs,k,v:[x for x in xs if x.get(k)==v],

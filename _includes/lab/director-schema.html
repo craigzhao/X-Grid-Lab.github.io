@@ -1,0 +1,22 @@
+{% assign director = site.data.people.director %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "url": {{ page.url | absolute_url | jsonify }},
+  "mainEntity": {
+    "@type": "Person",
+    "@id": {{ page.url | absolute_url | append: '#person' | jsonify }},
+    "name": {{ director.name | jsonify }},
+    "url": {{ page.url | absolute_url | jsonify }},
+    "jobTitle": {{ director.title | jsonify }},
+    "description": {{ director.bio | jsonify }},
+    "worksFor": {
+      "@type": "CollegeOrUniversity",
+      "name": {{ site.data.lab.university | jsonify }},
+      "url": "https://www.uta.edu/"
+    },
+    "sameAs": [{{ director.faculty_url | jsonify }}, {{ director.scholar_url | jsonify }}]
+  }
+}
+</script>
